@@ -104,7 +104,7 @@ def detect(save_img=False):
                 # Write results
                 if save_txt: # file header
                     with open(txt_path + '.txt', 'a') as f:
-                        f.write('class norm_x norm_y norm_w norm_h x1 y1 x2 y2 \n')
+                        f.write('class norm_x norm_y norm_w norm_h x1 y1 x2 y2 conf\n')
 
                 for *xyxy, conf, cls in reversed(det):
                     if save_txt:  # Write to file
